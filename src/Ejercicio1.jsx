@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { Ejercicio3tema } from "./Ejercicio3tema";
 
 function Ejercicio1(){
+    const { theme } = useContext(Ejercicio3tema);
     const [contador, setContador] = useState(2);
 
     const incrementar =() =>{
@@ -41,7 +43,7 @@ const styles = {
         position: "absolute",
         top: "1rem",    
         left: "1rem",
-        backgroundColor: "#f2f2f2", 
+        backgroundColor: "white", 
         color: "#000",
         padding: "1rem",
         textAlign: "left",
@@ -55,6 +57,6 @@ const styles = {
     texto: {
       marginBottom: "0.5rem"
     }
-  };
+};
 
 export default Ejercicio1;

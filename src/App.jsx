@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Ejercicio1 from './Ejercicio1'
 import Ejercicio2 from './Ejercicio2'
+import Ejercicio3 from './Ejercicio3'
+import { ThemeProvider } from './Ejercicio3tema'
 
 function App() {
 
@@ -11,9 +13,15 @@ function App() {
   return (
     <div>
 
-      <Ejercicio1/>
+    
 
-      <Ejercicio2/>
+      <ThemeProvider>
+        <Ejercicio3>
+          <Ejercicio1/>
+
+          <Ejercicio2/> 
+        </Ejercicio3>
+      </ThemeProvider>
 
     </div>
   )
