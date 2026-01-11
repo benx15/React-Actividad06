@@ -47,7 +47,7 @@ function Ejercicio2(){
   return (
     <div style={{
       ...estilos.contenedor,
-      backgroundColor: theme === "light" ? "white" : "#222",
+      backgroundColor: theme === "light" ? "white" : "#333",
       color: theme === "light" ? "#000" : "#fff"
     }}>
       <h2 style={{
