@@ -45,8 +45,15 @@ function Ejercicio2(){
     return true;
   });
   return (
-    <div style={estilos.contenedor}>
-      <h2 style={estilos.h2}>Lista de tareas</h2>
+    <div style={{
+      ...estilos.contenedor,
+      backgroundColor: theme === "light" ? "white" : "#222",
+      color: theme === "light" ? "#000" : "#fff"
+    }}>
+      <h2 style={{
+        ...estilos.h2,
+        color: theme === "light" ? "black" : "white"
+      }}>Lista de tareas</h2>
 
       <div style={{marginTop:"1rem" , marginBottom: "0.5rem"}}>
 
@@ -73,6 +80,7 @@ function Ejercicio2(){
             <span
               style={{
                 ...estilos.textoTarea,
+                color: theme === "light" ? "#000" : "#fff",
                 textDecoration: tarea.completada ? "line-through" : "none",
               }}
             >

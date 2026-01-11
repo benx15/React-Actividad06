@@ -16,11 +16,9 @@ function App() {
     
 
       <ThemeProvider>
-        <Ejercicio3>
-          <Ejercicio1/>
-
-          <Ejercicio2/> 
-        </Ejercicio3>
+        <Ejercicio3/>
+        <Ejercicio1/>
+        <Ejercicio2/>
       </ThemeProvider>
 
     </div>

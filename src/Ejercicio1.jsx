@@ -18,7 +18,11 @@ function Ejercicio1(){
     };
 
     return(
-        <div style={styles.contenedor}>
+        <div style={{
+            ...styles.contenedor,
+            backgroundColor: theme === "light" ? "white" : "#333",
+            color: theme === "light" ? "#000" : "#fff"
+        }}>
             <h2 style={styles.texto}>Contador: {contador}</h2>
             <div style={styles.botones}>
                 <button onClick={incrementar}>+</button>
